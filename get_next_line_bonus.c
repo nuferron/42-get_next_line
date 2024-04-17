@@ -102,7 +102,7 @@ char	*cleaning_storage(char *storage)
 
 char	*get_next_line(int fd)
 {
-	static char	*storage[OPEN_MAX] = {NULL};
+	static char	*storage[FOPEN_MAX] = {NULL};
 	char		*line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
